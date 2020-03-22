@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 907735018@qq.com, 1, LIC=TA312-9L7UW-XB7EC-79CZB-JBCKT-1XE35
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\qianrushi\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+F:\stmpro\program\intelligentSafe\智能安防\USER\Template.uvprojx
+Project File Date:  03/22/2020
+
+<h2>Output:</h2>
+Build target 'Template'
+compiling main.c...
+..\HARDWARE\OLED\oled.h(71): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\OLED\oled.h(72): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(73): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(79): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  uint8_t IIC_Wait_Ack();
+main.c(244): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                        if(strstr(p,"time"))
+main.c(249): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                        if(strstr(p,"show"))
+main.c(254): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                                        if(!strstr(buf,"\n"))
+main.c(262): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                        if(strstr(p,"pw"))
+main.c(264): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "uint8_t *"
+                                p=strtok((char *)p,"-");
+main.c(265): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "uint8_t *"
+                                p=strtok(NULL,"-");
+main.c(266): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                sprintf(buf,"%c%c%c%c\n",p[0],p[1],p[2],p[3]);
+main.c(268): warning:  #223-D: function "write_info" declared implicitly
+                                write_info(buf,9);
+main.c(359): warning:  #177-D: variable "j" was declared but never referenced
+                uint8_t i,j,status,card_size;
+main.c(359): warning:  #550-D: variable "card_size" was set but never used
+                uint8_t i,j,status,card_size;
+main.c(433): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                        if(strcmp(msg,(const char *)password)==0)
+main.c(453): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+        check_flash(buf,password,&cardNum,&recNum);
+main.c(453): warning:  #167-D: argument of type "volatile uint32_t *" is incompatible with parameter of type "uint32_t *"
+        check_flash(buf,password,&cardNum,&recNum);
+main.c(484): warning:  #177-D: variable "err" was declared but never referenced
+        OS_ERR err;
+main.c(6): warning:  #177-D: variable "mfrc552pidbuf" was declared but never referenced
+  static u8  mfrc552pidbuf[18];
+main.c: 19 warnings, 0 errors
+linking...
+Program Size: Code=43690 RO-data=3430 RW-data=620 ZI-data=39108  
+FromELF: creating hex file...
+"..\OBJ\Template.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\stmpro\program\intelligentSafe\智能安防\USER\RTE
+  D:\qianrushi\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
